@@ -18,6 +18,10 @@
             <input type="password"><br>
             <br>
             <a href="https://zspwitkowo.pl/"><button type="button" onclick="pentla">Zaloguj</button></a>
+            <br>
+            <br>
+            <br>
+            <a href="https://yt3.ggpht.com/a/AGF-l79l47TSUKmpXwZmn7isGfusZcY39v83kJJf-w=s900-c-k-c0xffffffff-no-rj-mo"><u>Prosze tego nie klikać bo bedzie straszny robot</u></a>
         </div>
         
     </body>
