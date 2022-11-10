@@ -17,7 +17,7 @@
             <h3>Podaj haslo:</h3>
             <input type="password"><br>
             <br>
-            <a href="https://zspwitkowo.pl/"><button type="button" onclick="pentla">Zaloguj</button></a>
+            <a href="essabaza2.php"><button type="button" onclick="pentla">Zaloguj</button></a>
             <br>
             <br>
             <br>
