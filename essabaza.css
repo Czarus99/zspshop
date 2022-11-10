@@ -14,3 +14,13 @@ th:hover {
     margin-left: auto;
     margin-right: auto;
 }
+.miner {
+    float: left;
+}
+.workingman {
+    margin-left: auto;
+    margin-right: auto;
+}
+button {
+    text-decoration: none;
+}
