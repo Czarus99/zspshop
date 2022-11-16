@@ -11,9 +11,12 @@
         
             $zap = $con->query($sql);
             $wyp = $zap->fetch_all(MYSQLI_ASSOC);
+            echo "Twoje oferty:". "<br>";
+        
             for ($i = 0; $i < count($wyp); $i++) {
-                echo $wyp[$i]["name"] . "<br>";
+                echo $wyp[$i]["name"]."<a href='szczegoly.php?offer_id=".$wyp[$i]['ID']."'>Szczegóły oferty</a> <br>";
             }
         ?>
+        
     </body>
 </html>

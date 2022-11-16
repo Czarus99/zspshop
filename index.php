@@ -1,28 +1,30 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>fajnezakupki.pl</title>
-        <link rel="stylesheet" href="styl.css">
-    </head>
-    <body>
-        <?php
-        $con = new mysqli("localhost", "root", "", "zspshop");
-         if(!empty($_COOKIE["id"]))
-                header('Location: '.'stronaglowna.php');   
-        
 
-        if(isset($_POST["login"]) && !empty($_POST["login"]) && isset($_POST["password"]) && !empty($_POST["password"])){  
-            $sql = "SELECT ID FROM `user` WHERE UserPass='".$_POST['password']."' and UserLogin='".$_POST['login']."';";
+<head>
+    <meta charset="utf-8">
+    <title>fajnezakupki.pl</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <?php
+        $con = new mysqli("localhost", "root", "", "zspshop");
+        if (!empty($_COOKIE["id"]))
+            header('Location: ' . 'stronaglowna.php');
+
+
+        if (isset($_POST["login"]) && !empty($_POST["login"]) && isset($_POST["password"]) && !empty($_POST["password"])) {
+            $sql = "SELECT ID FROM `user` WHERE UserPass='" . $_POST['password'] . "' and UserLogin='" . $_POST['login'] . "';";
             $wys = $con->query($sql);
             $wynik = $wys->fetch_array();
-            if(!empty($wynik["ID"])){
+            if (!empty($wynik["ID"])) {
                 setcookie("id", $wynik["ID"]);
-                 header('Location: '.'stronaglowna.php');   
+                header('Location: ' . 'stronaglowna.php');
             }
-            
+
         }
-        
-        if(isset($_COOKIE["logged"]) && !empty($_COOKIE["logged"])){
+
+        if (isset($_COOKIE["logged"]) && !empty($_COOKIE["logged"])) {
             echo "<div class='miner'>
                     <a href='essabaza.php''><img src='Noeloelo.png' style='width:100px;'></a>
                 </div>
@@ -36,9 +38,8 @@
                         <th><a href='Lolessa.php'>Ale mi sie nie chce</a></th>
                     </tr>
                 </table>";
-            
-        }
-        else{
+
+        } else {
             echo "<h1>LOGOWANIE</h1>
                 <br>
                 <br>
@@ -50,8 +51,9 @@
                     <br><input type='submit' value='Zaloguj'>
                 </form>";
         }
-        
+
         $con->close();
-        ?>        
-    </body>
+        ?>
+</body>
+
 </html>
