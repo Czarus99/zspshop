@@ -23,7 +23,6 @@
         <input type="text" name="nazwa" value="<?php echo $ez['name']; ?>">
         <input type="text" name="kategoria" value="<?php echo $ez['category']; ?>">
         <input type="text" name="cena" value="<?php echo $ez['price']; ?>">
-        <input type="submit" value="Zapisz">
     </form>
 </body>
 

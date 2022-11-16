@@ -54,6 +54,7 @@
 
         $con->close();
         ?>
+        <a href="rejestracja.php">Nie ma konta? Zarejestruj sie</a>
 </body>
 
 </html>
