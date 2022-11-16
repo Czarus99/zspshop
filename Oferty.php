@@ -16,11 +16,11 @@
         echo "Oferty:" . "<br>";
 
         for ($i = 0; $i < count($wyp); $i++) {
-            echo $wyp[$i]["name"] . "<a href='szczegoly2.php?offer_id=" . $wyp[$i]['ID'] . "'>Szczegóły oferty</a> <br>";
+            echo $wyp[$i]["name"] . "<a href='szczegoly2.php?offer_id=" . $wyp[$i]['ID'] . "'>Szczegóły oferty</a> <a href='Kup.php?offer_id=" . $wyp[$i]['ID'] . "'>Kup</a> <br>";
         }
         ?>
         <br><br>
-        <a href="Kup.php">Kup</a>
+        
 </body>
 
 </html>
